@@ -1,0 +1,34 @@
+
+---
+
+## 📄 3. `CodeBook.md`
+
+```markdown
+# Code Book: Tidy Dataset
+
+This code book describes the variables in the tidy dataset `tidyData.txt` produced by `run_analysis.R`.
+
+## Identifiers
+
+- `SubjectNum`: The ID of the subject (1 to 30).
+- `Activity`: The type of activity performed (e.g., WALKING, STANDING, LAYING).
+
+## Measurement Variables
+
+All other columns are the average of original measurements for each subject and activity. These variables were derived from:
+
+- Accelerometer and gyroscope 3-axial raw signals from the smartphone.
+- Signals were separated into time and frequency domains.
+- Only measurements with `mean()` and `std()` were selected.
+
+Examples of variable names:
+
+- `TimeBodyAccelerometerMeanX`
+- `TimeBodyAccelerometerSTDY`
+- `FrequencyBodyGyroscopeSTDZ`
+
+Variable names were cleaned:
+- Parentheses `()` removed
+- `-mean` → `Mean`
+- `-std` → `STD`
+- Hyphens `-` removed
